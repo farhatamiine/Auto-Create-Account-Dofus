@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "intense-wares-297609",
+  "private_key_id": "fb74077938fdb22cf455ef4f363d296685904998",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDIlXQCdXk8slSi\ntc7r6GdVGUgByBq8hCU1Dq0vhluD8jCmp8eAmTLz623ezusSLJby+8nxxf1W/vd+\ndNmG/eJT9/4ZnaHW5FIimcETB0KEkzgbmEEtOEGFIiD8CtkEzEUhxwI9raLlKMGY\nxE6n7cBE8i/7czxRooLohcWFSJ6+9R/MjefYkqlkcPR7aOE/Gk3hUCV5RfN3phFh\nWH/UT0TJ+jGxjVlqQRogkepAPkIBdO/Akw0F7vfO2asc85awpla5xOqva8t4T7vQ\nCu5ahIk7W5pQ0PJwk8yeoF1PiAjqtverDbJ/vTw/ooiPOyEAfCP3oeW3aTaus5UG\nlikvY1oBAgMBAAECggEADiWvC1Fac158kQapCS3Yw+wcOQvyXs4kiwEgU+lyYPRf\nBrzErxxJt2HT26gqdPCyK4HOH4BVuvdmtgOV0sCWCv1twu7BmxTQJOKaoeCcNMTm\nwIN/l/86F81tbXlyZF/n7Fb19dWzrIgFsjmo9o0n8h+cJMG0RRRk4/OIwpAkVNbN\nxB9n7PC/x8v2kE0mB0dhUFF2g6GrJURS8pwQAv0SZCYom5h9Kv1j+e97m4ICH1VM\ntNAEV7v/h/YooGHx6J/ZV6a9MToeo9aEI/O5/QdyRYNAMtp95yVaJAGALZmMD1lX\nd6SJPhOuXm/70rSkQwP35UfSGrdC7+Wox40DTtMmtQKBgQDweWZfiX7/UIcanPnK\nRkPqaUF4zVbfEfg7c5qG5P/aiXvPI0UKx/vRpMPbyEYi7BY8eD9EsY5ksf26N8zz\n9yVTwb5TIxv7llh4Zri2eI28hjxY4qFkP+YBywvfxTNO4HwtSA+cBzSg6YBWA9VN\n0vCr84KgNbMyrmJki1mQ95BBSwKBgQDViLzJqRL/K/IQkqrGT28tOoB/FgBQ9AGs\nj6B5XaXGAoH/lL0MvPir5aKpTWaYOYfBb5v+Zb+r6ICQHEyq9rKLZ9JWWGs3Njay\nZFzMv33YJ9jqlWoNvU0mq0fnUR3lzGsKIjsW73IdbNuuGnbGJRhn3gi/AaBJpWsp\n4Q+mUBgOYwKBgC2nPpJArkWWai/ZQWrvcBFerjla8nUjGjdfOSUG8LPyifjHP2JO\nmTYxy6U8HmSe4ZHVWl2WP+xKBluGIHjooMOH8rQh5DwdTOp+xe6OcIosCeTuEanQ\nn8ATZkuzSoxc/fYyyhPbIliyO9UYoTRHKb3bWx9DUqP6i19/PR/SgCaFAoGBAKBk\nfEIRoLZRARtXv7UD96OGfPx4vzYPgq5mmAhxwlJQkeszgyltTHB6Jct72yNem00+\nE3NsZCOxmdglmaUVdxllm8XF1or7SuyGnHojIFjb3YCfSLEXTztLjs/+yzFQcdqD\nydS5eQMHQJ+vOyYsuP9T9Ufb5dVLzon/hqzLHra3AoGBAKTJN/emo+H3/cz8aMSi\nEFnlDjJgQeZfA4WmO2HmT9fdrLrGmzcMaxT0kEyaAwUV1pu4hw0otcu0AU+G66Xx\nbdeYUSnqdgkBhn2NG5xztsSh0Wp203LYvXuci5ySGcldKDPsLLez4JiAZ9EoGdVv\nJ4qw1AA20VdaJakxvnQn9/DS\n-----END PRIVATE KEY-----\n",
+  "client_email": "dofus-create-account@intense-wares-297609.iam.gserviceaccount.com",
+  "client_id": "107975618162676328342",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dofus-create-account%40intense-wares-297609.iam.gserviceaccount.com"
+}

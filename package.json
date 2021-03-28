@@ -1,0 +1,31 @@
+{
+  "name": "dofus-create-account",
+  "version": "1.0.0",
+  "description": "create dofus account",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farhatamiine/dofus-create-account.git"
+  },
+  "author": "amine farhat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farhatamiine/dofus-create-account/issues"
+  },
+  "homepage": "https://github.com/farhatamiine/dofus-create-account#readme",
+  "dependencies": {
+    "@antiadmin/anticaptchaofficial": "^1.0.14",
+    "axios": "^0.21.1",
+    "chalk": "^4.1.0",
+    "google-spreadsheet": "^3.1.15",
+    "puppeteer": "^5.5.0",
+    "puppeteer-extra": "^3.1.18",
+    "puppeteer-extra-plugin-stealth": "^2.7.6",
+    "secure-random-password": "^0.2.2",
+    "uuid": "^8.3.2"
+  }
+}
