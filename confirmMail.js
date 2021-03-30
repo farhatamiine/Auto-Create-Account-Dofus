@@ -1,6 +1,8 @@
 const axios = require('axios').default
+const cheerio = require('cheerio')
+var fs = require('fs')
 
-const userCredential = {
+/* const userCredential = {
     address: 'aminefarhat@maxresistance.com',
     password: 'amine.farhat50',
 }
@@ -25,7 +27,8 @@ async function getJwtToken(userCredentials) {
             console.log('Done')
         })
 }
+ */
+//user = getJwtToken(userCredential)
+const $ = cheerio.load(fs.readFileSync('index.html'))
 
-user = await getJwtToken(userCredential)
-
-console.log(user)
+console.log($('td>a').first().attr('href'))

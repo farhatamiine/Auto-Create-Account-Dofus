@@ -21,6 +21,7 @@
     "@antiadmin/anticaptchaofficial": "^1.0.14",
     "axios": "^0.21.1",
     "chalk": "^4.1.0",
+    "cheerio": "^1.0.0-rc.5",
     "eslint-config-prettier": "^8.1.0",
     "google-spreadsheet": "^3.1.15",
     "googleapis": "^68.0.0",
