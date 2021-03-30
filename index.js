@@ -27,7 +27,7 @@ const createAccount = async () => {
         characters: [password.lower, password.upper, password.digits],
     })
 
-    const userEmail = 'closet162@gmail.com'
+    const userEmail = 'aminefarhat@maxresistance.com'
 
     const accountDetails = {
         ID: uuidv4(),
@@ -37,7 +37,7 @@ const createAccount = async () => {
     }
 
     const browser = await puppeteer.launch({
-        headless: true,
+        headless: false,
         slowMo: 10,
         defaultViewPort: null,
     })
