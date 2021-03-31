@@ -11,6 +11,8 @@ const {
     solveReCaptcha,
 } = require('./utils/function')
 
+const { confirmMail } = require('./confirmMail')
+
 puppeteer.use(StealthPlugin())
 
 const credentials = require('./My First Project-fb74077938fd.json')
@@ -37,7 +39,7 @@ const createAccount = async () => {
     }
 
     const browser = await puppeteer.launch({
-        headless: false,
+        headless: true,
         slowMo: 10,
         defaultViewPort: null,
     })
@@ -66,6 +68,8 @@ const createAccount = async () => {
 
     //! Send Infos to GoogleSheet
     accessSpreadSheet(accountDetails, credentials)
+    await delay(20000)
+    confirmMail();
     browser.close()
 }
 
