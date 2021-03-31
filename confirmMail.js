@@ -1,34 +1,61 @@
 const axios = require('axios').default
+const chalk = require('chalk')
 const cheerio = require('cheerio')
 var fs = require('fs')
 
-/* const userCredential = {
+const userCredential = {
     address: 'aminefarhat@maxresistance.com',
     password: 'amine.farhat50',
 }
 
-let user = {}
 async function getJwtToken(userCredentials) {
-    return await axios
-        .post('https://api.mail.tm/token', {
-            address: userCredentials.address,
-            password: userCredentials.password,
+    return await axios.post('https://api.mail.tm/token', {
+        address: userCredentials.address,
+        password: userCredentials.password,
+    })
+}
+
+async function getAllMessages() {
+    let rawdata = fs.readFileSync('token.json')
+    let token = JSON.parse(rawdata)
+    return await axios.get('https://api.mail.tm/messages?page=1', {
+        headers: {
+            Authorization: `Bearer ${token.token}`,
+            accept: 'application/ld+json',
+        },
+    })
+}
+
+getJwtToken(userCredential).then((res) => {
+    let data = JSON.stringify(res.data)
+    fs.writeFileSync('token.json', data)
+})
+
+getAllMessages().then((res) => {
+    const message = res.data['hydra:member'].filter((e) => {
+        return (
+            e.subject == 'Merci de confirmer votre email pour jouer à DOFUS' &&
+            e.seen == true
+        )
+    })
+    let rawdata = fs.readFileSync('token.json')
+    let token = JSON.parse(rawdata)
+    const email = axios
+        .get(`https://api.mail.tm${message[0]['@id']}`, {
+            headers: {
+                Authorization: `Bearer ${token.token}`,
+                accept: 'application/ld+json',
+            },
         })
         .then((res) => {
-            return {
-                id: res.data.id,
-                token: res.data.token,
-            }
+            return res.data
         })
-        .catch((err) => {
-            console.log(err)
-        })
-        .finally(() => {
-            console.log('Done')
-        })
-}
- */
-//user = getJwtToken(userCredential)
-const $ = cheerio.load(fs.readFileSync('index.html'))
-
-console.log($('td>a').first().attr('href'))
+    email.then((res) => {
+        //console.log(res.html[0])
+        const $ = cheerio.load(res.html[0])
+        const confirmationLink = $('td>a').first().attr('href')
+        console.log(
+            `${chalk.green('📩 Confirmation link :')} ${confirmationLink}`
+        )
+    })
+})
